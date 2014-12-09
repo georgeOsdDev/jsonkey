@@ -1,0 +1,41 @@
+{
+  "name": "jsonkey",
+  "version": "0.0.1",
+  "description": "Promised json key search",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "browserify index.js -o ./dist/jsonkey.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/georegeosddev/jsonif.git"
+  },
+  "keywords": [
+    "json",
+    "parse",
+    "stream",
+    "promise"
+  ],
+  "author": "Takeharu.Oshida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georegeosddev/jsonif/issues"
+  },
+  "homepage": "https://github.com/georegeosddev/jsonif",
+  "dependencies": {
+    "es6-promise": "^2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.0",
+    "chai-as-promised": "^4.1.1",
+    "chai": "^1.10.0",
+    "mocha": "^2.0.1",
+    "gulp-rename": "^1.2.0",
+    "jshint-stylish": "^1.0.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-uglify": "^1.0.2",
+    "gulp": "^3.8.10",
+    "coffee-script": "^1.8.0"
+  }
+}
