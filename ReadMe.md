@@ -1,4 +1,4 @@
-# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)[![npm version](https://badge.fury.io/js/jsonkey.svg)](http://badge.fury.io/js/jsonkey)
+# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)[![npm version](https://badge.fury.io/js/jsonkey.svg)](http://badge.fury.io/js/jsonkey) <img src="//benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/georgeosddev_jsonkey.svg)](https://saucelabs.com/u/georgeosddev_jsonkey)
 
@@ -7,13 +7,25 @@ Promised json key search.
 ## Usage
 
 ### In Browser
+
+Use bower.
+```bash
+bower isntall jsonkey
+```
+
 ```html
-<script src="path/to/jsonkey/dist/jsonkey_bundle.js"></script>
+<script src="./bower_components/jsonkey/dist/jsonkey_bundle.js"></script>
 ```
 `JSONKey` will be installed to global.
 
 
 ### In Node.js
+Use npm.
+
+```bash
+npm isntall jsonkey
+```
+
 ```javascript
 var JSONKey = require("jsonkey");
 ```
