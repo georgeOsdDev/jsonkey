@@ -9,8 +9,8 @@
 		"default"         : {
 			"outputSourceFiles" : true
 		},
-		"systemName"      : "JSONIF",
-		"footer"          : "<div style='text-align: center;'>Source code can be found at <a href='https://github.com/georgeosddev/jsonif' target='_blank'>github</a>, licenced under <a href='http://opensource.org/licenses/mit-license.php' target='_blank'>MIT</a></div>",
+		"systemName"      : "JSONKey",
+		"footer"          : "<div style='text-align: center;'>Source code can be found at <a href='https://github.com/georgeosddev/jsonkey' target='_blank'>github</a>, licenced under <a href='http://opensource.org/licenses/mit-license.php' target='_blank'>MIT</a></div>",
 		"copyright"       : "Copyright (c) 2014 <a href='http://about.me/takeharu.oshida' target='_blank'>Takeharu Oshida</a>",
 		"navType"         : "vertical",
 		"theme"           : "spacelab",

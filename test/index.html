@@ -7,11 +7,9 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <title>JSONKey Test</title>
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css">
-    <script type="text/javascript" src="../node_modules/es6-promise/dist/es6-promise.min.js"></script>
     <script>
-        if (typeof Promise === "undefined") var Promise = ES6Promise.Promise;
     </script>
-    <script type="text/javascript" src="../dist/jsonkey.js"></script>
+    <script type="text/javascript" src="../dist/jsonkey_bundle.min.js"></script>
 </head>
 <body>
     <div id="mocha"></div>
@@ -25,7 +23,6 @@
         var expect = chai.expect;
     </script>
     <script src="./test.js"></script>
-    <script>if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
-      else { mocha.run(); }</script>
+    <script>mocha.run();</script>
 </body>
 </html>

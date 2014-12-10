@@ -4,12 +4,12 @@
   "description": "Promised json key search",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "build": "browserify index.js -o ./dist/jsonkey.js"
+    "test": "gulp test",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/georegeosddev/jsonif.git"
+    "url": "git://github.com/georegeosddev/jsonkey.git"
   },
   "keywords": [
     "json",
@@ -20,9 +20,9 @@
   "author": "Takeharu.Oshida",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/georegeosddev/jsonif/issues"
+    "url": "https://github.com/georegeosddev/jsonkey/issues"
   },
-  "homepage": "https://github.com/georegeosddev/jsonif",
+  "homepage": "https://github.com/georegeosddev/jsonkey",
   "dependencies": {
     "es6-promise": "^2.0.1"
   },
@@ -36,6 +36,8 @@
     "gulp-jshint": "^1.9.0",
     "gulp-uglify": "^1.0.2",
     "gulp": "^3.8.10",
-    "coffee-script": "^1.8.0"
+    "coffee-script": "^1.8.0",
+    "gulp-mocha": "^2.0.0",
+    "gulp-clean": "^0.3.1"
   }
 }
