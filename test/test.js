@@ -7,13 +7,14 @@ if (typeof module !== "undefined" && module.exports) {
   chai.use(chaiAsPromised);
   var JSONKey   = require("../index.js");
   /*jshint +W079 */
+  this.JSONKey = JSONKey;
 }
 
-(function () {
+(function (global) {
   "use strict";
 
   function setUp(ctx){
-    ctx.parser = new JSONKey();
+    ctx.parser = new global.JSONKey();
     ctx.promiseForKeyA             = ctx.parser.key("a");
     ctx.promiseForKeyA2            = ctx.parser.key("a");
     ctx.promiseForKeyB             = ctx.parser.key("b");
@@ -365,7 +366,7 @@ if (typeof module !== "undefined" && module.exports) {
             y:"YYY",
             n:100
           });
-          this.parser = new JSONKey();
+          this.parser = new global.JSONKey();
           this.x = this.parser.key("x");
           this.promiseXAsXXX = this.parser.key("x").as("XXX");
           this.promiseYAsZZZ = this.parser.key("y").as("ZZZ");
@@ -390,4 +391,4 @@ if (typeof module !== "undefined" && module.exports) {
       });
     });
   });
-})();
+})(typeof window !== "undefined" ? window : this);

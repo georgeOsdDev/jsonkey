@@ -8,7 +8,6 @@ jshint = require 'gulp-jshint'
 stylish = require 'jshint-stylish'
 browserify = require 'gulp-browserify'
 
-
 gulp.task 'default', ->
   gulp.run 'build'
 

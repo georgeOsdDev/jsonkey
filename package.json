@@ -4,7 +4,7 @@
   "description": "Promised json key search",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test",
+    "test": "zuul -- test/test.js",
     "build": "gulp"
   },
   "repository": {
