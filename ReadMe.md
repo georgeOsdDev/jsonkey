@@ -1,4 +1,4 @@
-# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)
+# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)[![npm version](https://badge.fury.io/js/jsonkey.svg)](http://badge.fury.io/js/jsonkey)
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/georgeosddev_jsonkey.svg)](https://saucelabs.com/u/georgeosddev_jsonkey)
 
