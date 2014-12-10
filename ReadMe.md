@@ -1,5 +1,7 @@
 # JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/georgeosddev_jsonkey.svg)](https://saucelabs.com/u/georgeosddev_jsonkey)
+
 Promised json key search.
 
 ## Usage
