@@ -1,4 +1,4 @@
-# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)[![npm version](https://badge.fury.io/js/jsonkey.svg)](http://badge.fury.io/js/jsonkey) <img src="https://benschwarz.github.io/bower-badges/badge@2x.png" width="130" height="30">
+# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey) [![npm version](https://badge.fury.io/js/jsonkey.svg)](http://badge.fury.io/js/jsonkey)
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/georgeosddev_jsonkey.svg)](https://saucelabs.com/u/georgeosddev_jsonkey)
 
@@ -43,6 +43,7 @@ Create a json parser.
 #### params
 
  * `timeout` :Number :Optional(Default 100)
+
    All promise created by `key` method will be rejected when specified milliseconds was past before key was found.
 
 ### key
@@ -56,6 +57,7 @@ Create promise for value corresponding to specified key.
 #### params
 
  * `key` :String :Required
+
    You can use dot notation for nested object and brackets for array index.
 
 #### example
@@ -103,6 +105,7 @@ Create promise for value corresponding to specified key then chain it to predica
 #### params
 
 * `predicate` :Function :Required
+
    If this parameter is not `function`, `===` operator is applyed.
 
 #### example
