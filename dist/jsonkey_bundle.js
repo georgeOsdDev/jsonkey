@@ -5,12 +5,12 @@ if (typeof window !== "undefined") {
   module.exports = require("./lib/jsonkey");
 }
 },{"./lib/jsonkey":2}],2:[function(require,module,exports){
-/*!
+/*
 * JSONKey
 * https://github.com/georgeosddev/jsonkey
 *
-* Copyright (c) 2013 Takeharu.Oshida
-* Licensed under the MIT license.
+* license   The MIT License (MIT)
+* copyright Copyright (c) 2014 Takeharu Oshida <georgeosddev@gmail.com>
 */
 (function(){
   "use strict";
@@ -24,12 +24,6 @@ if (typeof window !== "undefined") {
   JSONKEY_TIMEOUT_KEY = "[jsonkey_timeout]"
   ;
 
-  var JSONKey = function(timeout){
-    this.timeout = timeout || JSONKEY_TIMEOUT;
-    this._maxListeners = 0;
-  };
-  util.inherits(JSONKey, events.EventEmitter);
-
   function isObject(obj) {
     return obj instanceof Object && Object.getPrototypeOf(obj) === Object.prototype;
   }
@@ -42,6 +36,24 @@ if (typeof window !== "undefined") {
     setTimeout(f,0);
   }
 
+  /** @class JSONKey */
+  /**
+  * JSONKey
+  * @constructor
+  * @param {number} timeout default value is 100
+  */
+  var JSONKey = function(timeout){
+    this.timeout = timeout || JSONKEY_TIMEOUT;
+    this._maxListeners = 0;
+  };
+  util.inherits(JSONKey, events.EventEmitter);
+
+  /**
+  * Start parse json string
+  * @function
+  * @memberof JSONKey.prototype
+  * @param {String} jsonString
+  */
   JSONKey.prototype.parse = function(jsonString){
     var self = this;
     setTimeout(function(){
@@ -58,6 +70,13 @@ if (typeof window !== "undefined") {
     /*noop*/}
   };
 
+  /**
+  * Create promise which will be resolved when specified key was found in parsed json.
+  * @function
+  * @memberof JSONKey.prototype
+  * @param {String} k key for search
+  * @return {Promise} promise
+  */
   JSONKey.prototype.key = function(k){
     var self = this;
     if (typeof k !== "string") throw new Error("key must be String!");
@@ -69,6 +88,13 @@ if (typeof window !== "undefined") {
         reject(null);
       });
     });
+
+    /**
+    * Apply predicator to ther finding result.
+    * @function
+    * @memberof JSONKey.prototype
+    * @param {Function|Any} predicate If not a function, equal operator will be called.
+    */
     p.as = function(predicate) {
       return p.then(function(v){
         if (isFunction(predicate)){
