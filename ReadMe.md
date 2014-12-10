@@ -1,4 +1,4 @@
-# JSONKey
+# JSONKey [![Build Status](https://travis-ci.org/georgeOsdDev/jsonkey.svg?branch=master)](https://travis-ci.org/georgeOsdDev/jsonkey)
 
 Promised json key search.
 
