@@ -1,6 +1,6 @@
 {
   "name": "jsonkey",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Promised json key search",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/georegeosddev/jsonkey.git"
+    "url": "git://github.com/georgeosddev/jsonkey.git"
   },
   "keywords": [
     "json",
@@ -20,9 +20,9 @@
   "author": "Takeharu.Oshida",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/georegeosddev/jsonkey/issues"
+    "url": "https://github.com/georgeosddev/jsonkey/issues"
   },
-  "homepage": "https://github.com/georegeosddev/jsonkey",
+  "homepage": "https://github.com/georgeosddev/jsonkey",
   "dependencies": {
     "es6-promise": "^2.0.1"
   },
