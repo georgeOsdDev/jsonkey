@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/georgeosddev/jsonkey",
   "dependencies": {
-    "es6-promise": "^2.0.1"
+    "es6-promise": "^2.0.1",
+    "promisechain": "0.0.1"
   },
   "devDependencies": {
     "browserify": "^7.0.0",

@@ -32,7 +32,7 @@ gulp.task 'compress', ->
       .pipe gulp.dest('./dist')
 
 gulp.task 'bundle', ->
-  gulp.src 'index.js'
+  gulp.src 'browser.js'
       .pipe browserify()
       .pipe rename("jsonkey_bundle.js")
       .pipe gulp.dest('./dist')

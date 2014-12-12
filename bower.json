@@ -1,7 +1,7 @@
 {
   "name": "jsonkey",
   "main": "dist/jsonkey_bundle.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/georgeOsdDev/jsonkey",
   "authors": [
     "Takeharu Oshida <georgeosddev@gmail.com>"
